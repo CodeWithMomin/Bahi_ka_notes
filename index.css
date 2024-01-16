@@ -19,7 +19,8 @@ nav{
     background-color: rgb(7, 7, 7);
     border: 0.5px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+   
     
 
 }
@@ -31,6 +32,7 @@ a{
     text-decoration: none;
     color: white;
     padding: 10px;
+    margin-left: 50px;
 
 }
 a:hover{
@@ -98,4 +100,47 @@ address{
 margin-top:20px;
 margin-right: 20px;
 
+}
+@media all and (max-width:1447px) and (min-width:1000px) {
+    header{
+        width: 100%;
+        justify-content: center;
+            }
+            .body-container{
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                justify-content: center;
+                
+               
+            }
+            .body-container2{
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                justify-content: center;
+                
+            }
+}
+@media all and (max-width:1028px) and (min-width:300px) {
+   header{
+    display:flex;
+    width: 1000px;
+    justify-content: center;
+        
+    }
+    nav{
+        width: 1000px;
+    }
+    .body-container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+        
+       
+    }
+    .body-container2{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+        
+    }
 }
